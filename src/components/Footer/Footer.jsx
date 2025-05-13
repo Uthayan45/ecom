@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/freshcart-logo.svg';
+import logo from '../../assets/uthayanlogo.png';
 import { useContext } from 'react';
 import { authContext } from '../../context/Auth/Auth';
 
@@ -78,13 +78,13 @@ export default function Footer() {
                     Contact
                   </h3>
                   <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    <a href="mailto:mohamed.ahmed.emary@gmail.com">
+                    <a href="uthayanu490@gmail.com">
                       uthayanu490@gmail.com
                     </a>
                   </span>
                   <span className="block space-x-2 mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
                     <a
-                      href="uthayan45"
+                      href="https://www.linkedin.com/in/uthayanece"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -105,7 +105,7 @@ export default function Footer() {
                       <i className="fa-lg fa-fw  far fa-envelope"></i>
                     </a>
                     <a
-                      href="https://leetcode.com/Spark71"
+                      href="https://leetcode.com/u/LcxV55ITGx/"
                       className="inline"
                       target="_blank"
                       rel="noopener noreferrer"

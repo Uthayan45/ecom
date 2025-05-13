@@ -1,4 +1,4 @@
-import logo from '../../assets/freshcart-logo.svg';
+import logo from '../../assets/uthayanlogo.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 import { authContext } from '../../context/Auth/Auth';
@@ -49,7 +49,7 @@ export default function Navbar() {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={logo} className="h-8" alt="Freshcart Logo" />
+            <img src={logo} className="h-8" alt="uthayanlogo" />
           </Link>
           <div className="flex lg:order-2">
             {userToken ? (
