@@ -4,7 +4,6 @@ import { authContext } from '../../context/Auth/Auth';
 
 export default function RedirectIfAuthenticated(props) {
   const { userToken } = useContext(authContext);
-
   if (userToken) {
     return <Navigate to="/" />;
   } else {

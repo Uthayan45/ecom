@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import Slider from 'react-slick';
 import Spinner from '../Spinner/Spinner';
 
+// this component is used to display a slidar of categories
+
 export default function CategorySlider() {
   const settings = {
     dots: true,
@@ -48,7 +50,7 @@ export default function CategorySlider() {
     queryFn: getCategories,
     select: (data) => data.data.data,
   });
-
+// this function is used to fetch api
   function getCategories() {
     return axios.get('https://ecommerce.routemisr.com/api/v1/categories');
   }

@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/uthayanlogo.png';
 import { useContext } from 'react';
 import { authContext } from '../../context/Auth/Auth';
-
 export default function Footer() {
   const { userToken } = useContext(authContext);
 
+// this is the footer component
   return (
     <>
       <footer className="bg-white border border-t-1 mt-6 dark:bg-gray-900">
@@ -16,38 +16,32 @@ export default function Footer() {
                 <a href="#">
                   <img className="w-auto h-7" src={logo} alt="Site Logo" />
                 </a>
-                <div className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
-                  Endless Choices, Unbeatable Prices
-                </div>
+                <div className="max-w-sm mt-2 text-gray-500 dark:text-gray-400"> Endless Choices, Unbeatable Prices </div>
               </div>
             </div>
+            {/* this is used for link */}
             <div className="mt-6 lg:mt-0 lg:flex-1">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
                 
                 <div>
-                  <h3 className="text-gray-700 uppercase dark:text-white">
-                    Jump to
-                  </h3>
+                  <h3 className="text-gray-700 uppercase dark:text-white">Jump to </h3>
                   {userToken ? (
                     <>
                       <Link
                         to="/"
                         className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                       >
-                        <i className="fa-fw  fas fa-home"></i> Home
-                      </Link>
+                        <i className="fa-fw  fas fa-home"></i> Home </Link>
                       <Link
                         to="/wishlist"
                         className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                       >
-                        <i className="fa-fw  fas fa-heart"></i> Wishlist
-                      </Link>
+                        <i className="fa-fw  fas fa-heart"></i> Wishlist</Link>
                       <Link
                         to="/cart"
                         className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                       >
-                        <i className="fa-fw  fas fa-shopping-cart"></i> Cart
-                      </Link>
+                        <i className="fa-fw  fas fa-shopping-cart"></i> Cart </Link>
                       <Link
                         to="/brands"
                         className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
@@ -62,25 +56,20 @@ export default function Footer() {
                         to="login"
                         className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                       >
-                        <i className="fas fa-sign-in-alt"></i> Login
-                      </Link>
+                        <i className="fas fa-sign-in-alt"></i> Login </Link>
                       <Link
                         to="register"
                         className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                       >
-                        <i className="fas fa-user-plus fa-fw"></i> Register
-                      </Link>
+                        <i className="fas fa-user-plus fa-fw"></i> Register </Link>
                     </>
                   )}
                 </div>
                 <div>
-                  <h3 className="text-gray-700 uppercase dark:text-white">
-                    Contact
+                  <h3 className="text-gray-700 uppercase dark:text-white"> Contact
                   </h3>
                   <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    <a href="uthayanu490@gmail.com">
-                      uthayanu490@gmail.com
-                    </a>
+                    <a href="uthayanu490@gmail.com"> uthayanu490@gmail.com </a>
                   </span>
                   <span className="block space-x-2 mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
                     <a

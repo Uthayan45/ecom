@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../react-slick/lib/index.js"],
+  "sourcesContent": ["\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports[\"default\"] = void 0;\nvar _slider = _interopRequireDefault(require(\"./slider\"));\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \"default\": obj }; }\nvar _default = exports[\"default\"] = _slider[\"default\"];"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAEA,WAAO,eAAe,SAAS,cAAc;AAAA,MAC3C,OAAO;AAAA,IACT,CAAC;AACD,YAAQ,SAAS,IAAI;AACrB,QAAI,UAAU,uBAAuB,gBAAmB;AACxD,aAAS,uBAAuB,KAAK;AAAE,aAAO,OAAO,IAAI,aAAa,MAAM,EAAE,WAAW,IAAI;AAAA,IAAG;AAChG,QAAI,WAAW,QAAQ,SAAS,IAAI,QAAQ,SAAS;AAAA;AAAA;",
+  "names": []
+}

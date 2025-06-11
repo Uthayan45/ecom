@@ -1,9 +1,8 @@
 import img1 from '../../assets/slider-image-1.jpeg';
 import img2 from '../../assets/slider-image-2.jpeg';
 import img3 from '../../assets/slider-image-3.jpeg';
-
 import Slider from 'react-slick';
-
+// this component is used to display a slider of images
 export default function MainSlider() {
   var settings = {
     dots: false,

@@ -5,13 +5,11 @@ import { authContext } from '../../context/Auth/Auth';
 import { initFlowbite } from 'flowbite';
 import { productsContext } from '../../context/Products/Products';
 import Search from '../../pages/Search/Search';
-
+// this is the navbar component
 export default function Navbar() {
   const { userToken, setUserToken } = useContext(authContext);
   const location = useLocation();
-
   const { data, setSearchRes, searchRes } = useContext(productsContext);
-
   function logout() {
     setUserToken(null);
     localStorage.removeItem('authToken');
@@ -21,16 +19,16 @@ export default function Navbar() {
   function handleSearch(e) {
     if (e.key === 'Enter') {
       const query = e.target.value;
-
       const filteredProducts = data.filter((product) =>
         product.title.toLowerCase().includes(query.toLowerCase().trim())
       );
-
       setSearchRes(filteredProducts);
       navigate('/search');
     }
   }
 
+
+  
   useEffect(() => {
     initFlowbite();
   }, []);

@@ -6,12 +6,9 @@ import { productsContext } from '../../context/Products/Products';
 
 export default function Products() {
   const { data } = useContext(productsContext);
-
   const { getWishlist, addToWishlist, deleteWishlistItem } =
     useContext(wishlistContext);
-
   const [wishlistIds, setWishlistIds] = useState(null);
-
   async function handleWishlist(id) {
     if (wishlistIds?.indexOf(id) !== -1) {
       await deleteWishlistItem(id);
@@ -20,17 +17,14 @@ export default function Products() {
     }
     main();
   }
-
   async function main() {
     const wishlistItems = await getWishlist();
     const ids = wishlistItems.map((item) => item._id);
     setWishlistIds(ids);
   }
-
   useEffect(() => {
     main();
   }, []);
-
   return (
     <>
       <div className="container flex flex-wrap items-center">
